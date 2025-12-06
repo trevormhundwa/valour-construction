@@ -1,0 +1,215 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import Button from '../components/common/Button.astro';
+import services from '../data/services.json';
+
+const icons = {
+  building: `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><path d="M9 22v-4h6v4"></path><path d="M8 6h.01"></path><path d="M16 6h.01"></path><path d="M12 6h.01"></path><path d="M12 10h.01"></path><path d="M12 14h.01"></path><path d="M16 10h.01"></path><path d="M16 14h.01"></path><path d="M8 10h.01"></path><path d="M8 14h.01"></path></svg>`,
+  home: `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>`,
+  tools: `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>`
+};
+
+const serviceImages = {
+  commercial: '/images/projects/v7.png',
+  residential: '/images/projects/v8.png',
+  renovation: '/images/projects/v9.png'
+};
+
+const processSteps = [
+  { number: '01', title: 'Consultation', description: 'We discuss your project requirements, budget, and timeline.' },
+  { number: '02', title: 'Planning & Design', description: 'Our team creates detailed plans and designs.' },
+  { number: '03', title: 'Construction', description: 'Skilled craftsmen bring your project to life.' },
+  { number: '04', title: 'Completion', description: 'Final inspections ensure quality before handover.' }
+];
+---
+
+<PageLayout
+  title="Our Services | Valour Construction"
+  description="Explore our construction services: commercial buildings, residential homes, and renovations. Quality construction in Zimbabwe since 2012."
+  currentPage="/services"
+>
+  <section class="page-hero">
+    <div class="container">
+      <span class="overline">Our Services</span>
+      <h1>What We Build</h1>
+      <p class="lead">From commercial complexes to dream homes, we deliver construction excellence across all project types.</p>
+    </div>
+  </section>
+
+  {services.map((service, index) => (
+    <section class="section service-detail" id={service.id}>
+      <div class="container">
+        <div class:list={['service-grid', { reverse: index % 2 === 1 }]}>
+          <div class="service-image">
+            <img src={serviceImages[service.id as keyof typeof serviceImages]} alt={service.title} loading="lazy" width="600" height="450" />
+          </div>
+          <div class="service-content">
+            <div class="service-icon" set:html={icons[service.icon as keyof typeof icons]} />
+            <h2>{service.title}</h2>
+            <p class="service-description">{service.description}</p>
+            <ul class="service-features">
+              {service.features.map((feature: string) => (
+                <li>
+                  <svg class="check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  {feature}
+                </li>
+              ))}
+            </ul>
+            <Button href="/contact" variant="primary">Discuss Your Project</Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="section process-section">
+    <div class="container">
+      <h2 class="text-center mb-7">Our Construction Process</h2>
+      <div class="process-grid">
+        {processSteps.map((step) => (
+          <div class="process-step">
+            <span class="process-number">{step.number}</span>
+            <h3>{step.title}</h3>
+            <p>{step.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Start Your Project?</h2>
+      <p>Contact us today for a free consultation and quote.</p>
+      <Button href="/contact" variant="primary" size="lg">Get a Free Quote</Button>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .page-hero {
+    background: var(--color-bg);
+    padding: var(--space-9) var(--container-padding);
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: var(--font-size-5xl);
+    color: var(--color-navy);
+    margin: var(--space-3) 0;
+  }
+
+  .page-hero .lead { max-width: 600px; margin: 0 auto; }
+
+  .service-detail { background: var(--color-white); }
+  .service-detail:nth-child(odd) { background: var(--color-bg); }
+
+  .service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  .service-grid.reverse .service-image { order: 2; }
+
+  .service-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .service-image img { width: 100%; height: auto; }
+
+  .service-icon { color: var(--color-navy); margin-bottom: var(--space-4); }
+
+  .service-content h2 { font-size: var(--font-size-3xl); margin-bottom: var(--space-4); }
+
+  .service-description {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray);
+    margin-bottom: var(--space-5);
+    line-height: 1.7;
+  }
+
+  .service-features {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin-bottom: var(--space-6);
+  }
+
+  .service-features li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+  }
+
+  .service-features .check { color: var(--color-green); flex-shrink: 0; }
+
+  .process-section { background: var(--color-white); }
+
+  .process-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-6);
+  }
+
+  .process-step {
+    text-align: center;
+    padding: var(--space-5);
+    position: relative;
+  }
+
+  .process-step::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: -30px;
+    width: 60px;
+    height: 2px;
+    background: var(--color-border);
+  }
+
+  .process-step:last-child::after { display: none; }
+
+  .process-number {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: var(--color-navy);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-4);
+  }
+
+  .process-step h3 { font-size: var(--font-size-lg); margin-bottom: var(--space-2); }
+  .process-step p { font-size: var(--font-size-sm); color: var(--color-gray); }
+
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-dark) 100%);
+    padding: var(--space-9) var(--container-padding);
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  .cta-section h2 { color: var(--color-white); margin-bottom: var(--space-3); }
+  .cta-section p { opacity: 0.9; margin-bottom: var(--space-6); }
+
+  @media (max-width: 1024px) {
+    .service-grid { grid-template-columns: 1fr; }
+    .service-grid.reverse .service-image { order: 0; }
+    .service-image { max-width: 500px; margin: 0 auto; }
+    .process-grid { grid-template-columns: repeat(2, 1fr); }
+    .process-step::after { display: none; }
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 { font-size: 2.5rem; }
+    .process-grid { grid-template-columns: 1fr; }
+  }
+</style>

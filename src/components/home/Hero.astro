@@ -1,0 +1,117 @@
+---
+import Button from '../common/Button.astro';
+---
+
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">
+      Building <span class="accent">Excellence</span><br>
+      in Zimbabwe
+    </h1>
+    <p class="hero-text">
+      Quality construction delivered with precision and integrity.
+      From commercial projects to dream homes, we build with excellence.
+    </p>
+    <div class="hero-buttons">
+      <Button href="/contact" variant="primary" size="lg">Get a Free Quote</Button>
+      <a href="/projects" class="btn-ghost">View Our Projects</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img
+      src="/images/projects/v1.png"
+      alt="Valour Construction project - Modern building in Zimbabwe"
+      width="960"
+      height="640"
+      loading="eager"
+    />
+  </div>
+</section>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+    background: var(--color-bg);
+  }
+
+  .hero-content {
+    padding: var(--space-8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+  }
+
+  .hero-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-5xl);
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--color-navy);
+    margin-bottom: var(--space-5);
+  }
+
+  .hero-title .accent {
+    color: var(--color-orange);
+  }
+
+  .hero-text {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray);
+    margin-bottom: var(--space-6);
+    max-width: 480px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .hero-image {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 1024px) {
+    .hero {
+      grid-template-columns: 1fr;
+      min-height: auto;
+    }
+
+    .hero-image {
+      order: -1;
+      height: 300px;
+    }
+
+    .hero-content {
+      padding: var(--space-6) var(--container-padding);
+      text-align: center;
+      max-width: none;
+    }
+
+    .hero-title {
+      font-size: 2.5rem;
+    }
+
+    .hero-text {
+      max-width: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-buttons {
+      justify-content: center;
+    }
+  }
+</style>

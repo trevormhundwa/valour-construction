@@ -1,0 +1,380 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import Button from '../components/common/Button.astro';
+---
+
+<PageLayout
+  title="About Us | Valour Construction"
+  description="Learn about Valour Construction - Zimbabwe's trusted construction company since 2012. Meet our team and discover our commitment to quality building."
+  currentPage="/about"
+>
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="overline">About Us</span>
+      <h1>Building Excellence Since 2012</h1>
+      <p class="lead">Quality construction delivered with precision, integrity, and unwavering commitment to our clients.</p>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="section story-section">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-image">
+          <img src="/images/projects/v3.png" alt="Valour Construction building project" loading="lazy" width="600" height="450" />
+        </div>
+        <div class="story-content">
+          <h2>Our Story</h2>
+          <p>Valour Construction was founded in 2012 by Simbarashe Dongo and Martin K. Mhundwa with a vision to deliver world-class construction services in Zimbabwe.</p>
+          <p>What started as a small team has grown into a respected construction company with over 33 completed projects across the country. Our commitment to quality, attention to detail, and client satisfaction has earned us a reputation as one of Zimbabwe's most trusted builders.</p>
+          <p>We believe in building not just structures, but lasting relationships with our clients. Every project we undertake is a testament to our dedication to excellence and our passion for construction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="section timeline-section">
+    <div class="container">
+      <h2 class="text-center mb-7">Our Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2012</span>
+            <h3>Company Founded</h3>
+            <p>Valour Construction established in Harare, Zimbabwe with a vision for excellence.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2015</span>
+            <h3>First Major Project</h3>
+            <p>Completed our first large-scale commercial construction project.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2018</span>
+            <h3>Expansion</h3>
+            <p>Expanded services to include residential construction and renovations.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2024</span>
+            <h3>33+ Projects</h3>
+            <p>Proudly celebrating over 33 successful projects across Zimbabwe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values Section -->
+  <section class="section values-section">
+    <div class="container">
+      <h2 class="text-center mb-7">Our Core Values</h2>
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="m9 12 2 2 4-4"></path></svg>
+          </div>
+          <h3>Quality</h3>
+          <p>We never compromise on quality. Every project meets the highest standards of craftsmanship and materials.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          </div>
+          <h3>Integrity</h3>
+          <p>Honesty and transparency guide every interaction. We deliver what we promise, on time and on budget.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <h3>Reliability</h3>
+          <p>Count on us to deliver. Our track record speaks to our commitment to meeting deadlines and exceeding expectations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section team-section">
+    <div class="container">
+      <h2 class="text-center mb-7">Our Leadership</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="/images/projects/v4.png" alt="Simbarashe Dongo" loading="lazy" width="300" height="300" />
+          </div>
+          <h3>Simbarashe Dongo</h3>
+          <p class="team-role">Co-Founder & Director</p>
+          <p class="team-bio">With extensive experience in construction management, Simbarashe leads our commercial projects division.</p>
+        </div>
+        <div class="team-card">
+          <div class="team-photo">
+            <img src="/images/projects/v5.png" alt="Martin K. Mhundwa" loading="lazy" width="300" height="300" />
+          </div>
+          <h3>Martin K. Mhundwa</h3>
+          <p class="team-role">Co-Founder & Director</p>
+          <p class="team-bio">Martin oversees residential projects and client relations, ensuring every homeowner's vision becomes reality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Build Together?</h2>
+      <p>Let's discuss your next construction project.</p>
+      <Button href="/contact" variant="primary" size="lg">Contact Us</Button>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .page-hero {
+    background: var(--color-bg);
+    padding: var(--space-9) var(--container-padding);
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: var(--font-size-5xl);
+    color: var(--color-navy);
+    margin: var(--space-3) 0;
+  }
+
+  .page-hero .lead {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .story-section { background: var(--color-white); }
+
+  .story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  .story-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .story-image img { width: 100%; height: auto; }
+
+  .story-content h2 { margin-bottom: var(--space-5); }
+
+  .story-content p {
+    color: var(--color-gray);
+    margin-bottom: var(--space-4);
+    line-height: 1.7;
+  }
+
+  .timeline-section { background: var(--color-bg); }
+
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--color-border);
+  }
+
+  .timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: calc(50% + 30px);
+    position: relative;
+    margin-bottom: var(--space-7);
+  }
+
+  .timeline-item:nth-child(even) {
+    justify-content: flex-start;
+    padding-right: 0;
+    padding-left: calc(50% + 30px);
+  }
+
+  .timeline-marker {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    background: var(--color-navy);
+    border-radius: 50%;
+    border: 3px solid var(--color-white);
+    box-shadow: var(--shadow-md);
+  }
+
+  .timeline-content {
+    background: var(--color-white);
+    padding: var(--space-5);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    max-width: 350px;
+  }
+
+  .timeline-year {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-orange);
+  }
+
+  .timeline-content h3 {
+    font-size: var(--font-size-lg);
+    margin: var(--space-2) 0;
+  }
+
+  .timeline-content p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray);
+    margin: 0;
+  }
+
+  .values-section { background: var(--color-white); }
+
+  .values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+  }
+
+  .value-card {
+    text-align: center;
+    padding: var(--space-6);
+  }
+
+  .value-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--space-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg);
+    border-radius: var(--radius-full);
+    color: var(--color-navy);
+  }
+
+  .value-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-3);
+  }
+
+  .value-card p {
+    color: var(--color-gray);
+    font-size: var(--font-size-sm);
+  }
+
+  .team-section { background: var(--color-bg); }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-7);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .team-card {
+    text-align: center;
+    background: var(--color-white);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+
+  .team-photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto var(--space-5);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+    border: 4px solid var(--color-navy);
+  }
+
+  .team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .team-card h3 {
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-1);
+  }
+
+  .team-role {
+    color: var(--color-orange);
+    font-weight: 500;
+    margin-bottom: var(--space-3);
+  }
+
+  .team-bio {
+    color: var(--color-gray);
+    font-size: var(--font-size-sm);
+    margin: 0;
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-dark) 100%);
+    padding: var(--space-9) var(--container-padding);
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  .cta-section h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-3);
+  }
+
+  .cta-section p {
+    opacity: 0.9;
+    margin-bottom: var(--space-6);
+  }
+
+  @media (max-width: 1024px) {
+    .story-grid { grid-template-columns: 1fr; }
+    .story-image { max-width: 500px; margin: 0 auto; }
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 { font-size: 2.5rem; }
+
+    .timeline::before { left: 20px; }
+
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+      padding-left: 60px;
+      padding-right: 0;
+      justify-content: flex-start;
+    }
+
+    .timeline-marker { left: 20px; }
+    .timeline-content { max-width: none; }
+    .values-grid { grid-template-columns: 1fr; }
+    .team-grid { grid-template-columns: 1fr; }
+  }
+</style>

@@ -1,0 +1,304 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+
+const WEB3FORMS_ACCESS_KEY = '7d8b4a10-3ac4-4113-824d-feb48a497788';
+---
+
+<PageLayout
+  title="Contact Us | Valour Construction"
+  description="Get in touch with Valour Construction for your construction project in Zimbabwe. Request a free quote."
+  currentPage="/contact"
+>
+  <section class="page-hero">
+    <div class="container">
+      <span class="overline">Get in Touch</span>
+      <h1>Contact Us</h1>
+      <p class="lead">Ready to start your project? Send us a message and we'll respond as soon as possible.</p>
+    </div>
+  </section>
+
+  <section class="section contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-form-wrapper">
+          <h2>Send Us a Message</h2>
+          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="contact-form">
+            <input type="hidden" name="access_key" value={WEB3FORMS_ACCESS_KEY}>
+            <input type="hidden" name="subject" value="New Contact Form Submission - Valour Construction">
+            <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required autocomplete="name" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required autocomplete="email" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+263 7XX XXX XXX" autocomplete="tel" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="project_type">Project Type <span class="required">*</span></label>
+              <select id="project_type" name="project_type" class="form-input form-select" required>
+                <option value="">Select a project type</option>
+                <option value="Commercial Construction">Commercial Construction</option>
+                <option value="Residential Construction">Residential Construction</option>
+                <option value="Renovation">Renovation & Remodeling</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Tell us about your project <span class="required">*</span></label>
+              <textarea id="message" name="message" class="form-input form-textarea" rows="5" placeholder="Describe your project requirements..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <div class="h-captcha" data-captcha="true"></div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading" hidden>Sending...</span>
+            </button>
+
+            <div id="form-success" class="form-message success" hidden>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              <p>Thank you! Your message has been sent successfully.</p>
+            </div>
+
+            <div id="form-error" class="form-message error" hidden>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+              <p>Oops! Something went wrong. Please try again.</p>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="info-card">
+            <h3>Contact Information</h3>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <h4>Address</h4>
+                <address>348 Samora Machel, Eastlea<br>Harare, Zimbabwe</address>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+263772375465">+263 772 375 465</a><br><a href="tel:+263772853215">+263 772 853 215</a></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p id="contact-email"></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <h4>Business Hours</h4>
+                <p>Mon - Fri: 8:00 AM - 5:00 PM<br>Saturday: 8:00 AM - 1:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.1433553738!2d31.0537!3d-17.8292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQ5JzQ1LjEiUyAzMcKwMDMnMTMuMyJF!5e0!3m2!1sen!2szw!4v1234567890" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" title="Valour Construction Office Location"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</PageLayout>
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+<style>
+  .page-hero {
+    background: var(--color-bg);
+    padding: var(--space-9) var(--container-padding);
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: var(--font-size-5xl);
+    color: var(--color-navy);
+    margin: var(--space-3) 0;
+  }
+
+  .page-hero .lead { max-width: 600px; margin: 0 auto; }
+
+  .contact-section { background: var(--color-white); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--space-8);
+    align-items: start;
+  }
+
+  .contact-form-wrapper h2 { margin-bottom: var(--space-5); }
+
+  .contact-form {
+    background: var(--color-bg);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+  }
+
+  .required { color: var(--color-error); }
+
+  .form-message {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    margin-top: var(--space-4);
+  }
+
+  .form-message[hidden] { display: none; }
+  .form-message.success { background: rgba(46, 139, 87, 0.1); color: var(--color-success); }
+  .form-message.error { background: rgba(231, 76, 60, 0.1); color: var(--color-error); }
+  .form-message svg { flex-shrink: 0; margin-top: 2px; }
+  .form-message p { margin: 0; }
+
+  .btn-loading[hidden] { display: none; }
+
+  .info-card {
+    background: var(--color-bg);
+    padding: var(--space-6);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-5);
+  }
+
+  .info-card h3 {
+    margin-bottom: var(--space-5);
+    color: var(--color-navy);
+  }
+
+  .info-item {
+    display: flex;
+    gap: var(--space-4);
+    margin-bottom: var(--space-5);
+  }
+
+  .info-item:last-child { margin-bottom: 0; }
+
+  .info-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    color: var(--color-navy);
+    flex-shrink: 0;
+  }
+
+  .info-item h4 {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray);
+    margin-bottom: var(--space-1);
+    font-weight: 500;
+  }
+
+  .info-item p, .info-item address {
+    font-style: normal;
+    font-size: var(--font-size-base);
+    color: var(--color-charcoal);
+    line-height: 1.6;
+  }
+
+  .info-item a { color: var(--color-charcoal); text-decoration: none; }
+  .info-item a:hover { color: var(--color-navy); }
+
+  .map-wrapper {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+
+  @media (max-width: 1024px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-info { order: -1; }
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 { font-size: 2.5rem; }
+    .form-row { grid-template-columns: 1fr; }
+    .contact-form { padding: var(--space-5); }
+  }
+</style>
+
+<script>
+  const emailEl = document.getElementById('contact-email');
+  if (emailEl) {
+    const email = ['info', 'valourconstruction.co.zw'].join('@');
+    emailEl.innerHTML = `<a href="mailto:${email}">${email}</a>`;
+  }
+
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const submitBtn = document.getElementById('submit-btn');
+  const btnText = submitBtn?.querySelector('.btn-text');
+  const btnLoading = submitBtn?.querySelector('.btn-loading');
+  const successMsg = document.getElementById('form-success');
+  const errorMsg = document.getElementById('form-error');
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (btnText) btnText.setAttribute('hidden', '');
+      if (btnLoading) btnLoading.removeAttribute('hidden');
+      if (submitBtn) submitBtn.setAttribute('disabled', '');
+      if (successMsg) successMsg.hidden = true;
+      if (errorMsg) errorMsg.hidden = true;
+
+      try {
+        const formData = new FormData(form);
+        const response = await fetch(form.action, { method: 'POST', body: formData });
+        const result = await response.json();
+        if (result.success) {
+          if (successMsg) successMsg.hidden = false;
+          form.reset();
+          // Reset captcha if available
+          const hcaptchaFrame = form.querySelector('.h-captcha iframe');
+          if (hcaptchaFrame) hcaptchaFrame.src = hcaptchaFrame.src;
+        } else {
+          if (errorMsg) errorMsg.hidden = false;
+        }
+      } catch {
+        if (errorMsg) errorMsg.hidden = false;
+      } finally {
+        if (btnText) btnText.removeAttribute('hidden');
+        if (btnLoading) btnLoading.setAttribute('hidden', '');
+        if (submitBtn) submitBtn.removeAttribute('disabled');
+      }
+    });
+  }
+</script>

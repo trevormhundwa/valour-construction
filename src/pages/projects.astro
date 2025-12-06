@@ -1,0 +1,195 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import ProjectCard from '../components/common/ProjectCard.astro';
+import projects from '../data/projects.json';
+
+const categories = [
+  { id: 'all', label: 'All Projects' },
+  { id: 'commercial', label: 'Commercial' },
+  { id: 'residential', label: 'Residential' },
+  { id: 'renovation', label: 'Renovation' }
+];
+---
+
+<PageLayout
+  title="Our Projects | Valour Construction"
+  description="Browse our portfolio of construction projects in Zimbabwe. Commercial buildings, residential homes, and renovation projects."
+  currentPage="/projects"
+>
+  <section class="page-hero">
+    <div class="container">
+      <span class="overline">Our Work</span>
+      <h1>Projects Portfolio</h1>
+      <p class="lead">Explore our completed construction projects across Zimbabwe.</p>
+    </div>
+  </section>
+
+  <section class="section projects-section">
+    <div class="container">
+      <div class="filter-bar" role="tablist">
+        {categories.map((cat, index) => (
+          <button class:list={['filter-btn', { active: cat.id === 'all' }]} data-filter={cat.id} role="tab" aria-selected={cat.id === 'all' ? 'true' : 'false'}>
+            {cat.label}
+          </button>
+        ))}
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        {projects.map((project) => (
+          <div class="project-item" data-category={project.category} id={project.id}>
+            <ProjectCard title={project.title} category={project.category} location={project.location} year={project.year} image={project.image} />
+          </div>
+        ))}
+      </div>
+
+      <div class="no-results" id="no-results" hidden>
+        <p>No projects found in this category.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h2>Start Your Project Today</h2>
+      <p>Let's create something remarkable together.</p>
+      <a href="/contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+    </div>
+  </section>
+</PageLayout>
+
+<style>
+  .page-hero {
+    background: var(--color-bg);
+    padding: var(--space-9) var(--container-padding);
+    text-align: center;
+  }
+
+  .page-hero h1 {
+    font-size: var(--font-size-5xl);
+    color: var(--color-navy);
+    margin: var(--space-3) 0;
+  }
+
+  .page-hero .lead { max-width: 600px; margin: 0 auto; }
+
+  .projects-section { background: var(--color-white); }
+
+  .filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-3);
+    margin-bottom: var(--space-7);
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    padding: var(--space-3) var(--space-5);
+    background: transparent;
+    color: var(--color-charcoal);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-full);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-base);
+  }
+
+  .filter-btn:hover {
+    border-color: var(--color-navy);
+    color: var(--color-navy);
+  }
+
+  .filter-btn.active {
+    background: var(--color-navy);
+    border-color: var(--color-navy);
+    color: var(--color-white);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+  }
+
+  .project-item {
+    transition: opacity var(--transition-base), transform var(--transition-base);
+  }
+
+  .project-item.hidden { display: none; }
+
+  .no-results {
+    text-align: center;
+    padding: var(--space-8);
+    color: var(--color-gray);
+  }
+
+  .no-results[hidden] { display: none; }
+
+  .cta-section {
+    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-dark) 100%);
+    padding: var(--space-9) var(--container-padding);
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  .cta-section h2 { color: var(--color-white); margin-bottom: var(--space-3); }
+  .cta-section p { opacity: 0.9; margin-bottom: var(--space-6); }
+
+  .cta-section .btn-primary {
+    background: var(--color-cta);
+    border-color: var(--color-cta);
+  }
+
+  @media (max-width: 1024px) {
+    .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 768px) {
+    .page-hero h1 { font-size: 2.5rem; }
+    .projects-grid { grid-template-columns: 1fr; }
+    .filter-bar { gap: var(--space-2); }
+    .filter-btn { padding: var(--space-2) var(--space-4); font-size: var(--font-size-xs); }
+  }
+</style>
+
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projectItems = document.querySelectorAll('.project-item');
+  const noResults = document.getElementById('no-results');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      filterButtons.forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+      });
+      button.classList.add('active');
+      button.setAttribute('aria-selected', 'true');
+
+      let visibleCount = 0;
+      projectItems.forEach(item => {
+        const category = item.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          item.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+
+      if (noResults) noResults.hidden = visibleCount > 0;
+    });
+  });
+
+  const hash = window.location.hash.substring(1);
+  if (hash) {
+    const categoryBtn = document.querySelector(`[data-filter="${hash}"]`);
+    if (categoryBtn) (categoryBtn as HTMLButtonElement).click();
+    else {
+      const projectEl = document.getElementById(hash);
+      if (projectEl) projectEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+</script>

@@ -1,0 +1,48 @@
+/* Global Styles - Import all CSS modules */
+
+@import './variables.css';
+@import './reset.css';
+@import './typography.css';
+@import './components.css';
+
+/* Base body styles */
+body {
+  background-color: var(--color-bg);
+}
+
+/* Page wrapper */
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page main {
+  flex: 1;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-navy);
+  color: var(--color-white);
+  padding: 8px 16px;
+  z-index: 1000;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Image optimization */
+img {
+  height: auto;
+}
+
+/* Lazy loading placeholder */
+img[loading="lazy"] {
+  background-color: var(--color-border);
+}

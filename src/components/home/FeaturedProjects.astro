@@ -1,0 +1,53 @@
+---
+import SectionHeader from '../common/SectionHeader.astro';
+import ProjectCard from '../common/ProjectCard.astro';
+import projects from '../../data/projects.json';
+
+const featuredProjects = projects.filter(p => p.featured).slice(0, 3);
+---
+
+<section class="featured-projects section">
+  <div class="container">
+    <SectionHeader
+      title="Featured Projects"
+      link={{ href: '/projects', label: 'View All Projects' }}
+    />
+
+    <div class="projects-grid">
+      {featuredProjects.map((project) => (
+        <ProjectCard
+          title={project.title}
+          category={project.category}
+          location={project.location}
+          year={project.year}
+          image={project.image}
+          href={`/projects#${project.id}`}
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .featured-projects {
+    background: var(--color-white);
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+  }
+
+  @media (max-width: 1024px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

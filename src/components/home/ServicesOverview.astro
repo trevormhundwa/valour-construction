@@ -1,0 +1,50 @@
+---
+import SectionHeader from '../common/SectionHeader.astro';
+import ServiceCard from '../common/ServiceCard.astro';
+import services from '../../data/services.json';
+---
+
+<section class="services-section section">
+  <div class="container">
+    <SectionHeader
+      title="Our Services"
+      subtitle="What we do best — delivered with excellence"
+      centered
+    />
+
+    <div class="services-grid">
+      {services.map((service) => (
+        <ServiceCard
+          title={service.title}
+          description={service.description}
+          icon={service.icon as 'building' | 'home' | 'tools'}
+          href={`/services#${service.id}`}
+        />
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .services-section {
+    background: var(--color-bg);
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+  }
+
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

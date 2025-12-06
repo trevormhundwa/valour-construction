@@ -1,0 +1,50 @@
+---
+import Button from '../common/Button.astro';
+---
+
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to Start Your Project?</h2>
+      <p>Let's discuss your construction needs and bring your vision to life.</p>
+      <Button href="/contact" variant="primary" size="lg">Get a Free Quote</Button>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-banner {
+    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-navy-dark) 100%);
+    padding: var(--space-9) var(--container-padding);
+    text-align: center;
+    color: var(--color-white);
+  }
+
+  .cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .cta-banner h2 {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--space-3);
+    color: var(--color-white);
+  }
+
+  .cta-banner p {
+    font-size: var(--font-size-lg);
+    opacity: 0.9;
+    margin-bottom: var(--space-6);
+  }
+
+  .cta-banner :global(.btn-primary) {
+    background: var(--color-cta);
+    border-color: var(--color-cta);
+  }
+
+  .cta-banner :global(.btn-primary:hover) {
+    background: var(--color-white);
+    color: var(--color-cta);
+  }
+</style>

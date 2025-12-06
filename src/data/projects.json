@@ -1,0 +1,182 @@
+[
+  {
+    "id": "v1",
+    "title": "Modern Office Complex",
+    "category": "commercial",
+    "location": "Harare",
+    "year": "2023",
+    "image": "/images/projects/v1.png",
+    "description": "Contemporary office building with state-of-the-art facilities.",
+    "featured": true
+  },
+  {
+    "id": "v2",
+    "title": "Luxury Residential Villa",
+    "category": "residential",
+    "location": "Borrowdale",
+    "year": "2023",
+    "image": "/images/projects/v2.png",
+    "description": "Custom-built luxury home with premium finishes.",
+    "featured": true
+  },
+  {
+    "id": "v3",
+    "title": "Commercial Renovation",
+    "category": "renovation",
+    "location": "Harare CBD",
+    "year": "2022",
+    "image": "/images/projects/v3.png",
+    "description": "Complete renovation of commercial retail space.",
+    "featured": true
+  },
+  {
+    "id": "v4",
+    "title": "Residential Development",
+    "category": "residential",
+    "location": "Eastlea",
+    "year": "2022",
+    "image": "/images/projects/v4.png",
+    "description": "Multi-unit residential complex with modern amenities.",
+    "featured": false
+  },
+  {
+    "id": "v5",
+    "title": "Warehouse Facility",
+    "category": "commercial",
+    "location": "Msasa",
+    "year": "2022",
+    "image": "/images/projects/v5.png",
+    "description": "Industrial warehouse with loading bays and office space.",
+    "featured": false
+  },
+  {
+    "id": "v6",
+    "title": "Home Extension Project",
+    "category": "renovation",
+    "location": "Avondale",
+    "year": "2022",
+    "image": "/images/projects/v6.png",
+    "description": "Residential extension adding new living spaces.",
+    "featured": false
+  },
+  {
+    "id": "v7",
+    "title": "Retail Shopping Center",
+    "category": "commercial",
+    "location": "Harare",
+    "year": "2021",
+    "image": "/images/projects/v7.png",
+    "description": "Multi-tenant retail center with parking facilities.",
+    "featured": false
+  },
+  {
+    "id": "v8",
+    "title": "Family Home",
+    "category": "residential",
+    "location": "Mt Pleasant",
+    "year": "2021",
+    "image": "/images/projects/v8.png",
+    "description": "Four-bedroom family home with garden.",
+    "featured": false
+  },
+  {
+    "id": "v9",
+    "title": "Office Renovation",
+    "category": "renovation",
+    "location": "Harare CBD",
+    "year": "2021",
+    "image": "/images/projects/v9.png",
+    "description": "Modern office space renovation with open floor plan.",
+    "featured": false
+  },
+  {
+    "id": "v10",
+    "title": "Industrial Building",
+    "category": "commercial",
+    "location": "Graniteside",
+    "year": "2021",
+    "image": "/images/projects/v10.png",
+    "description": "Industrial manufacturing facility.",
+    "featured": false
+  },
+  {
+    "id": "v11",
+    "title": "Townhouse Complex",
+    "category": "residential",
+    "location": "Highlands",
+    "year": "2020",
+    "image": "/images/projects/v11.png",
+    "description": "Cluster of modern townhouses with shared amenities.",
+    "featured": false
+  },
+  {
+    "id": "v12",
+    "title": "Kitchen Remodel",
+    "category": "renovation",
+    "location": "Chisipite",
+    "year": "2020",
+    "image": "/images/projects/v12.png",
+    "description": "Complete kitchen renovation with modern fixtures.",
+    "featured": false
+  },
+  {
+    "id": "v13",
+    "title": "Corporate Headquarters",
+    "category": "commercial",
+    "location": "Harare",
+    "year": "2020",
+    "image": "/images/projects/v13.png",
+    "description": "Multi-story corporate office building.",
+    "featured": false
+  },
+  {
+    "id": "v14",
+    "title": "Residential Estate",
+    "category": "residential",
+    "location": "Greendale",
+    "year": "2019",
+    "image": "/images/projects/v14.png",
+    "description": "Housing estate development with multiple units.",
+    "featured": false
+  },
+  {
+    "id": "v15",
+    "title": "Bathroom Renovation",
+    "category": "renovation",
+    "location": "Avondale",
+    "year": "2019",
+    "image": "/images/projects/v15.png",
+    "description": "Luxury bathroom upgrade with premium finishes.",
+    "featured": false
+  },
+  {
+    "id": "v16",
+    "title": "Shopping Mall Extension",
+    "category": "commercial",
+    "location": "Harare",
+    "year": "2019",
+    "image": "/images/projects/v16.png",
+    "description": "Mall extension with additional retail space.",
+    "featured": false
+  },
+  {
+    "id": "v17",
+    "title": "Custom Home Build",
+    "category": "residential",
+    "location": "Borrowdale",
+    "year": "2018",
+    "image": "/images/projects/v17.png",
+    "description": "Custom-designed home with unique architectural features.",
+    "featured": false
+  },
+  {
+    "id": "v18",
+    "title": "Commercial Fit-Out",
+    "category": "renovation",
+    "location": "Harare CBD",
+    "year": "2018",
+    "image": "/images/projects/v18.png",
+    "description": "Interior fit-out for commercial tenant.",
+    "featured": false
+  }
+]

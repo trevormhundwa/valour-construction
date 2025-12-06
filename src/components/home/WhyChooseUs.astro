@@ -1,0 +1,132 @@
+---
+import Button from '../common/Button.astro';
+
+const features = [
+  {
+    title: '12+ Years of Experience',
+    description: 'Proven track record in Zimbabwe\'s construction industry'
+  },
+  {
+    title: 'Quality Craftsmanship',
+    description: 'Attention to detail in every build we undertake'
+  },
+  {
+    title: 'On-Time Delivery',
+    description: 'We meet deadlines consistently, every time'
+  },
+  {
+    title: 'Transparent Pricing',
+    description: 'No hidden costs or surprises in your project'
+  }
+];
+---
+
+<section class="why-choose section">
+  <div class="container">
+    <div class="why-choose-grid">
+      <div class="why-choose-image">
+        <img
+          src="/images/projects/v2.png"
+          alt="Valour Construction team at work"
+          loading="lazy"
+          decoding="async"
+          width="600"
+          height="500"
+        />
+      </div>
+      <div class="why-choose-content">
+        <h2>Why Choose Valour</h2>
+        <ul class="features-list">
+          {features.map((feature) => (
+            <li class="feature-item">
+              <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <div>
+                <h3 class="feature-title">{feature.title}</h3>
+                <p class="feature-text">{feature.description}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <Button href="/about" variant="outline">Learn About Us</Button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .why-choose {
+    background: var(--color-white);
+  }
+
+  .why-choose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-8);
+    align-items: center;
+  }
+
+  .why-choose-image {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .why-choose-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .why-choose-content h2 {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--space-6);
+  }
+
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+    margin-bottom: var(--space-6);
+  }
+
+  .feature-item {
+    display: flex;
+    gap: var(--space-4);
+  }
+
+  .check-icon {
+    flex-shrink: 0;
+    color: var(--color-green);
+    margin-top: 2px;
+  }
+
+  .feature-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-charcoal);
+    margin-bottom: var(--space-1);
+  }
+
+  .feature-text {
+    font-size: var(--font-size-base);
+    color: var(--color-gray);
+  }
+
+  @media (max-width: 1024px) {
+    .why-choose-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .why-choose-image {
+      order: -1;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .why-choose-content {
+      text-align: left;
+    }
+  }
+</style>

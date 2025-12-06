@@ -1,0 +1,38 @@
+[
+  {
+    "id": "commercial",
+    "title": "Commercial Construction",
+    "icon": "building",
+    "description": "Office blocks, retail spaces, warehouses, and shopping centers built to the highest standards.",
+    "features": [
+      "Office Buildings",
+      "Retail Spaces",
+      "Warehouses & Industrial",
+      "Shopping Centers"
+    ]
+  },
+  {
+    "id": "residential",
+    "title": "Residential Construction",
+    "icon": "home",
+    "description": "Custom homes, apartments, townhouses, and luxury villas designed for comfortable living.",
+    "features": [
+      "Custom Homes",
+      "Apartments & Townhouses",
+      "Housing Estates",
+      "Luxury Villas"
+    ]
+  },
+  {
+    "id": "renovation",
+    "title": "Renovations & Remodeling",
+    "icon": "tools",
+    "description": "Modernize and upgrade existing residential and commercial spaces with expert craftsmanship.",
+    "features": [
+      "Home Renovations",
+      "Office Upgrades",
+      "Extensions & Additions",
+      "Interior Remodeling"
+    ]
+  }
+]
