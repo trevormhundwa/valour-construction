@@ -1,7 +1,4 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/valourcon/public_html
-    - /bin/rm -rf $DEPLOYPATH/*
-    - /bin/cp -R ./* $DEPLOYPATH/
-    - /bin/rm -f $DEPLOYPATH/.cpanel.yml
+    - /bin/cp -R * /home/valourcon/public_html/
