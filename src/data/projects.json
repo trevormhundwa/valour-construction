@@ -5,9 +5,9 @@
     "category": "commercial",
     "location": "Harare",
     "year": "2023",
-    "image": "/images/projects/v1.png",
+    "image": "/images/projects/v1.jpg",
     "description": "Contemporary office building with state-of-the-art facilities.",
-    "featured": true
+    "featured": false
   },
   {
     "id": "v2",
@@ -15,7 +15,7 @@
     "category": "residential",
     "location": "Borrowdale",
     "year": "2023",
-    "image": "/images/projects/v2.png",
+    "image": "/images/projects/v2.jpg",
     "description": "Custom-built luxury home with premium finishes.",
     "featured": true
   },
@@ -25,9 +25,9 @@
     "category": "renovation",
     "location": "Harare CBD",
     "year": "2022",
-    "image": "/images/projects/v3.png",
+    "image": "/images/projects/v3.jpg",
     "description": "Complete renovation of commercial retail space.",
-    "featured": true
+    "featured": false
   },
   {
     "id": "v4",
@@ -35,9 +35,9 @@
     "category": "residential",
     "location": "Eastlea",
     "year": "2022",
-    "image": "/images/projects/v4.png",
+    "image": "/images/projects/v4.jpg",
     "description": "Multi-unit residential complex with modern amenities.",
-    "featured": false
+    "featured": true
   },
   {
     "id": "v5",
@@ -45,7 +45,7 @@
     "category": "commercial",
     "location": "Msasa",
     "year": "2022",
-    "image": "/images/projects/v5.png",
+    "image": "/images/projects/v5.jpg",
     "description": "Industrial warehouse with loading bays and office space.",
     "featured": false
   },
@@ -55,7 +55,7 @@
     "category": "renovation",
     "location": "Avondale",
     "year": "2022",
-    "image": "/images/projects/v6.png",
+    "image": "/images/projects/v6.jpg",
     "description": "Residential extension adding new living spaces.",
     "featured": false
   },
@@ -65,7 +65,7 @@
     "category": "commercial",
     "location": "Harare",
     "year": "2021",
-    "image": "/images/projects/v7.png",
+    "image": "/images/projects/v7.jpg",
     "description": "Multi-tenant retail center with parking facilities.",
     "featured": false
   },
@@ -75,7 +75,7 @@
     "category": "residential",
     "location": "Mt Pleasant",
     "year": "2021",
-    "image": "/images/projects/v8.png",
+    "image": "/images/projects/v8.jpg",
     "description": "Four-bedroom family home with garden.",
     "featured": false
   },
@@ -85,7 +85,7 @@
     "category": "renovation",
     "location": "Harare CBD",
     "year": "2021",
-    "image": "/images/projects/v9.png",
+    "image": "/images/projects/v9.jpg",
     "description": "Modern office space renovation with open floor plan.",
     "featured": false
   },
@@ -95,7 +95,7 @@
     "category": "commercial",
     "location": "Graniteside",
     "year": "2021",
-    "image": "/images/projects/v10.png",
+    "image": "/images/projects/v10.jpg",
     "description": "Industrial manufacturing facility.",
     "featured": false
   },
@@ -105,7 +105,7 @@
     "category": "residential",
     "location": "Highlands",
     "year": "2020",
-    "image": "/images/projects/v11.png",
+    "image": "/images/projects/v11.jpg",
     "description": "Cluster of modern townhouses with shared amenities.",
     "featured": false
   },
@@ -115,7 +115,7 @@
     "category": "renovation",
     "location": "Chisipite",
     "year": "2020",
-    "image": "/images/projects/v12.png",
+    "image": "/images/projects/v12.jpg",
     "description": "Complete kitchen renovation with modern fixtures.",
     "featured": false
   },
@@ -125,7 +125,7 @@
     "category": "commercial",
     "location": "Harare",
     "year": "2020",
-    "image": "/images/projects/v13.png",
+    "image": "/images/projects/v13.jpg",
     "description": "Multi-story corporate office building.",
     "featured": false
   },
@@ -135,7 +135,7 @@
     "category": "residential",
     "location": "Greendale",
     "year": "2019",
-    "image": "/images/projects/v14.png",
+    "image": "/images/projects/v14.jpg",
     "description": "Housing estate development with multiple units.",
     "featured": false
   },
@@ -145,7 +145,7 @@
     "category": "renovation",
     "location": "Avondale",
     "year": "2019",
-    "image": "/images/projects/v15.png",
+    "image": "/images/projects/v15.jpg",
     "description": "Luxury bathroom upgrade with premium finishes.",
     "featured": false
   },
@@ -155,7 +155,7 @@
     "category": "commercial",
     "location": "Harare",
     "year": "2019",
-    "image": "/images/projects/v16.png",
+    "image": "/images/projects/v16.jpg",
     "description": "Mall extension with additional retail space.",
     "featured": false
   },
@@ -165,7 +165,7 @@
     "category": "residential",
     "location": "Borrowdale",
     "year": "2018",
-    "image": "/images/projects/v17.png",
+    "image": "/images/projects/v17.jpg",
     "description": "Custom-designed home with unique architectural features.",
     "featured": false
   },
@@ -175,8 +175,568 @@
     "category": "renovation",
     "location": "Harare CBD",
     "year": "2018",
-    "image": "/images/projects/v18.png",
+    "image": "/images/projects/v18.jpg",
     "description": "Interior fit-out for commercial tenant.",
+    "featured": false
+  },
+  {
+    "id": "v19",
+    "title": "Site Foundation & Ground Works",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v19.jpg",
+    "description": "Early stage foundation work on residential property.",
+    "featured": false
+  },
+  {
+    "id": "v20",
+    "title": "Residential Staircase Installation",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v20.jpg",
+    "description": "Interior wooden staircase construction and framing.",
+    "featured": false
+  },
+  {
+    "id": "v21",
+    "title": "Modern Home Balcony & Railing",
+    "category": "renovation",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v21.jpg",
+    "description": "Metal railing fabrication and installation on existing home.",
+    "featured": false
+  },
+  {
+    "id": "v22",
+    "title": "Commercial Staircase & Railing",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v22.jpg",
+    "description": "Industrial-style metal staircase and railing system.",
+    "featured": false
+  },
+  {
+    "id": "v23",
+    "title": "Retail Storefront Partition",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v23.jpg",
+    "description": "Glass and metal partition for retail and commercial space.",
+    "featured": false
+  },
+  {
+    "id": "v24",
+    "title": "Warehouse Under Construction",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v24.jpg",
+    "description": "Large industrial warehouse with concrete walls and roof.",
+    "featured": false
+  },
+  {
+    "id": "v25",
+    "title": "Modern Brick Construction Facade",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v25.jpg",
+    "description": "New residential building with contemporary brick design.",
+    "featured": false
+  },
+  {
+    "id": "v26",
+    "title": "Modern Metal Canopy Structure",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v26.jpg",
+    "description": "Metal carport and covered area with modern design.",
+    "featured": false
+  },
+  {
+    "id": "v27",
+    "title": "Residential Bathroom Fitout",
+    "category": "renovation",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v27.jpg",
+    "description": "Modern bathroom renovation with premium fixtures.",
+    "featured": false
+  },
+  {
+    "id": "v28",
+    "title": "Residential Kitchen Renovation",
+    "category": "renovation",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v28.jpg",
+    "description": "Modern kitchen with white cabinetry and wood tiling.",
+    "featured": false
+  },
+  {
+    "id": "v29",
+    "title": "Retail Window Installation",
+    "category": "renovation",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v29.jpg",
+    "description": "Glass storefront windows with security features.",
+    "featured": false
+  },
+  {
+    "id": "v30",
+    "title": "Victorian-Style Residential Villa",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v30.jpg",
+    "description": "Upscale residential home with architectural features.",
+    "featured": false
+  },
+  {
+    "id": "v31",
+    "title": "Small Retail Shop Construction",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v31.jpg",
+    "description": "Modest commercial retail structure near completion.",
+    "featured": false
+  },
+  {
+    "id": "v32",
+    "title": "Retail Shop Under Construction",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v32.jpg",
+    "description": "Commercial building with marked windows and doors.",
+    "featured": false
+  },
+  {
+    "id": "v33",
+    "title": "Residential Foundation Pit",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v33.jpg",
+    "description": "Deep foundation excavation for multi-story home.",
+    "featured": false
+  },
+  {
+    "id": "v34",
+    "title": "Concrete Basement Structure",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v34.jpg",
+    "description": "Below-ground structure with reinforced concrete walls.",
+    "featured": false
+  },
+  {
+    "id": "v35",
+    "title": "Modern Completed Home",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v35.jpg",
+    "description": "White and black exterior trim, ready for landscaping.",
+    "featured": false
+  },
+  {
+    "id": "v36",
+    "title": "Industrial Flooring Application",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v36.jpg",
+    "description": "Polished concrete flooring in commercial space.",
+    "featured": false
+  },
+  {
+    "id": "v37",
+    "title": "Subdivision & Infrastructure",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v37.jpg",
+    "description": "Multiple housing units with road development.",
+    "featured": false
+  },
+  {
+    "id": "v38",
+    "title": "Residential Paint & Finishing",
+    "category": "renovation",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v38.jpg",
+    "description": "Home exterior painting and driveway work.",
+    "featured": false
+  },
+  {
+    "id": "v39",
+    "title": "Commercial Pavement Preparation",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v39.jpg",
+    "description": "Ground preparation and paving for commercial property.",
+    "featured": false
+  },
+  {
+    "id": "v40",
+    "title": "Modern Cottage Home",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v40.jpg",
+    "description": "Small residential cottage with modern design.",
+    "featured": false
+  },
+  {
+    "id": "v41",
+    "title": "Small Residential Home",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v41.jpg",
+    "description": "Single-family home with black and white trim.",
+    "featured": false
+  },
+  {
+    "id": "v42",
+    "title": "Commercial Space Fit-Out",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v42.jpg",
+    "description": "Interior renovation of commercial retail or office space.",
+    "featured": false
+  },
+  {
+    "id": "v43",
+    "title": "Commercial Floor Renovation",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v43.jpg",
+    "description": "Commercial space with flooring preparation.",
+    "featured": false
+  },
+  {
+    "id": "v44",
+    "title": "Industrial Handrail Installation",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v44.jpg",
+    "description": "Metal safety railing for commercial and industrial property.",
+    "featured": false
+  },
+  {
+    "id": "v45",
+    "title": "Corrugated Metal Garden Shed",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v45.jpg",
+    "description": "Small storage structure with corrugated materials.",
+    "featured": false
+  },
+  {
+    "id": "v46",
+    "title": "Modern Metal Garden Studio",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v46.jpg",
+    "description": "Contemporary small home or studio with clean lines.",
+    "featured": false
+  },
+  {
+    "id": "v47",
+    "title": "Commercial Handrail Installation",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v47.jpg",
+    "description": "Stainless steel safety railings for commercial installation.",
+    "featured": false
+  },
+  {
+    "id": "v48",
+    "title": "Warehouse Renovation",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v48.jpg",
+    "description": "Large commercial warehouse structure renovation.",
+    "featured": false
+  },
+  {
+    "id": "v49",
+    "title": "Retail Display Counter Fabrication",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v49.jpg",
+    "description": "Curved retail counter with storage for fit-out work.",
+    "featured": false
+  },
+  {
+    "id": "v50",
+    "title": "Storage Unit Interior",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v50.jpg",
+    "description": "Interior of corrugated metal storage compartment.",
+    "featured": false
+  },
+  {
+    "id": "v51",
+    "title": "Pharmacy Dispensary Fit-Out",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v51.jpg",
+    "description": "Professional pharmacy counter and shelving installation.",
+    "featured": false
+  },
+  {
+    "id": "v52",
+    "title": "Site Safety Signage",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v52.jpg",
+    "description": "Construction site with professional safety signage.",
+    "featured": false
+  },
+  {
+    "id": "v53",
+    "title": "Foundation Rebar Installation",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v53.jpg",
+    "description": "Ground-level foundation reinforcement work.",
+    "featured": false
+  },
+  {
+    "id": "v54",
+    "title": "Residential Interior Renovation",
+    "category": "renovation",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v54.jpg",
+    "description": "Modern living space with shelving and finishes.",
+    "featured": false
+  },
+  {
+    "id": "v55",
+    "title": "Shower Enclosure Installation",
+    "category": "renovation",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v55.jpg",
+    "description": "Modern frameless glass shower enclosure fit-out.",
+    "featured": false
+  },
+  {
+    "id": "v56",
+    "title": "Primary School Construction",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v56.jpg",
+    "description": "Educational facility with colorful murals.",
+    "featured": false
+  },
+  {
+    "id": "v57",
+    "title": "Bathroom Shower Installation",
+    "category": "renovation",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v57.jpg",
+    "description": "Marble tile shower enclosure with premium fit-out.",
+    "featured": false
+  },
+  {
+    "id": "v58",
+    "title": "Modern Commercial Building",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v58.jpg",
+    "description": "Multi-story commercial structure with parking.",
+    "featured": false
+  },
+  {
+    "id": "v59",
+    "title": "Retail Display Cabinet System",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v59.jpg",
+    "description": "Professional display shelving with glass doors.",
+    "featured": false
+  },
+  {
+    "id": "v60",
+    "title": "Retail Shelving Installation",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v60.jpg",
+    "description": "Commercial storage and display shelving system.",
+    "featured": false
+  },
+  {
+    "id": "v61",
+    "title": "Healthcare Facility Counter",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v61.jpg",
+    "description": "Medical or pharmacy counter with professional fit-out.",
+    "featured": false
+  },
+  {
+    "id": "v62",
+    "title": "Residential Roofing Work",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v62.jpg",
+    "description": "Metal roof installation on new residential build.",
+    "featured": false
+  },
+  {
+    "id": "v63",
+    "title": "Residential Roof Installation",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v63.jpg",
+    "description": "Pitched metal roof construction.",
+    "featured": false
+  },
+  {
+    "id": "v64",
+    "title": "Industrial Roof Repair",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v64.jpg",
+    "description": "Commercial and industrial roof under maintenance.",
+    "featured": false
+  },
+  {
+    "id": "v65",
+    "title": "Metal Garden Studio",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v65.jpg",
+    "description": "Small modern residential outbuilding.",
+    "featured": false
+  },
+  {
+    "id": "v66",
+    "title": "Metal Garden Studio Complete",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v66.jpg",
+    "description": "Finished corrugated metal residential structure.",
+    "featured": false
+  },
+  {
+    "id": "v67",
+    "title": "Brick Home Construction",
+    "category": "residential",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v67.jpg",
+    "description": "Residential home during brick-laying phase.",
+    "featured": false
+  },
+  {
+    "id": "v68",
+    "title": "Modern Commercial Showroom",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v68.jpg",
+    "description": "Contemporary commercial building with steel railings.",
+    "featured": false
+  },
+  {
+    "id": "v69",
+    "title": "Shower Room Renovation",
+    "category": "renovation",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v69.jpg",
+    "description": "Premium bathroom with marble tile shower.",
+    "featured": false
+  },
+  {
+    "id": "v70",
+    "title": "Sewer Drainage Installation",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v70.jpg",
+    "description": "Underground concrete pipe installation for utilities.",
+    "featured": false
+  },
+  {
+    "id": "v71",
+    "title": "Rural Home Renovation",
+    "category": "renovation",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v71.jpg",
+    "description": "Painting and exterior work on existing property.",
+    "featured": false
+  },
+  {
+    "id": "v72",
+    "title": "Trench Excavation",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v72.jpg",
+    "description": "Underground infrastructure and foundation trenching.",
+    "featured": true
+  },
+  {
+    "id": "v73",
+    "title": "Electrical Wiring Installation",
+    "category": "renovation",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v73.jpg",
+    "description": "Professional building renovation with safety scaffolding.",
+    "featured": false
+  },
+  {
+    "id": "v74",
+    "title": "Commercial Building Final Stage",
+    "category": "commercial",
+    "location": "Zimbabwe",
+    "year": "2025",
+    "image": "/images/projects/v74.jpg",
+    "description": "Modern commercial building with parking and finishes.",
     "featured": false
   }
 ]
