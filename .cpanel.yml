@@ -1,16 +1,15 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/valourcon/public_html
-    - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp 404.html $DEPLOYPATH
-    - /bin/cp favicon.svg $DEPLOYPATH
-    - /bin/cp robots.txt $DEPLOYPATH
-    - /bin/cp sitemap-0.xml $DEPLOYPATH
-    - /bin/cp sitemap-index.xml $DEPLOYPATH
-    - /bin/cp -R about $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R contact $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
-    - /bin/cp -R projects $DEPLOYPATH
-    - /bin/cp -R services $DEPLOYPATH
+    - /bin/cp index.html /home/valourcon/public_html/
+    - /bin/cp 404.html /home/valourcon/public_html/
+    - /bin/cp favicon.svg /home/valourcon/public_html/
+    - /bin/cp robots.txt /home/valourcon/public_html/
+    - /bin/cp sitemap-0.xml /home/valourcon/public_html/
+    - /bin/cp sitemap-index.xml /home/valourcon/public_html/
+    - /bin/cp -R about /home/valourcon/public_html/
+    - /bin/cp -R assets /home/valourcon/public_html/
+    - /bin/cp -R contact /home/valourcon/public_html/
+    - /bin/cp -R images /home/valourcon/public_html/
+    - /bin/cp -R projects /home/valourcon/public_html/
+    - /bin/cp -R services /home/valourcon/public_html/
