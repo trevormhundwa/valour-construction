@@ -1,5 +1,5 @@
-# build output - KEEP dist/ for cPanel deployment
-# dist/
+# build output - deploy branch handles deployment files
+dist/
 # generated types
 .astro/
 
