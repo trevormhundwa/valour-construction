@@ -1,0 +1,11 @@
+# Valour Construction - Robots.txt
+# https://valourconstruction.co.zw
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://valourconstruction.co.zw/sitemap-index.xml
+
+# Disallow crawling of error pages
+Disallow: /404.html
